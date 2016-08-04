@@ -22,3 +22,7 @@ Route::get('/comment', function(){
 Route::get('/feedback', function(){
 	return 'Thank You';
 });
+
+Route::get('/calc/{num1}/{num2}', function($num1, $num2){
+	return $num1 + $num2;
+});

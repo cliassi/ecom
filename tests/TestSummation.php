@@ -4,27 +4,16 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class ExampleTest extends TestCase
+class SummationTest extends TestCase
 {
     /**
      * A basic functional test example.
      *
      * @return void
      */
-    public function testBasicExample()
-    {
-        $this->visit('/')
-             ->see('Laravel 5');
-
-        $this->visit('/comment')
-            ->click('Click Me')
-            ->see('Thank You')
-            ->seePageIs('feedback');
-    }
-
     public function testSummation()
     {
-        $this->visit('/calc/45/55')
+        $this->visit('/calc/-45/55')
             ->see('100');
     }
 }
