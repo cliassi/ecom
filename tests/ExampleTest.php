@@ -14,7 +14,7 @@ class ExampleTest extends TestCase
     public function testBasicExample()
     {
         $this->visit('/')
-             ->see('Laravel 5');
+             ->see('Laravel 51');
 
         $this->visit('/comment')
             ->click('Click Me')
@@ -24,7 +24,7 @@ class ExampleTest extends TestCase
 
     public function testSummation()
     {
-        $this->visit('/calc/45/55')
-            ->see('100');
+        $this->visit('/calc/35/55')
+            ->see('90');
     }
 }

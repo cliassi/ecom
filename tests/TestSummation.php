@@ -13,7 +13,7 @@ class SummationTest extends TestCase
      */
     public function testSummation()
     {
-        $this->visit('/calc/-45/55')
+        $this->visit('/calc/-45/558')
             ->see('100');
     }
 }
